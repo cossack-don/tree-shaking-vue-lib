@@ -5,6 +5,7 @@ import dts from "vite-plugin-dts";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import { defineConfig } from "vite";
 
+// TODO префикс для папки UI
 const files = fs.readdirSync("./src/components").filter((file) => file.includes("Ui"));
 
 const components = files.reduce((obj, component) => {

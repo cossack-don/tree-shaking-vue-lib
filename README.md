@@ -1,5 +1,5 @@
-# Vite Library mode Code splitting
-
+# Vite Library mode - tree-shaking build
+- vue + ts + css/scss + tree-shaking + css in js
 Папка dist специально включена для того, чтобы увидеть билд. Каждый файл компонента содержит свои стили. У всех компонентов есть свои d.ts файлы. Все пропсы, включая те, которые используют интерфейсы из внешнего файла, корректно отображаются в конечном приложении.
 
 Также для примера используются дополнительные общие стили, которые не связаны с компонентами. Их можно отдельно импортировать.
@@ -8,7 +8,7 @@
 
 ```
 <script setup lang="ts">
-  import { UiButton, UiInput } from "vite-lib-code-splitting";
+  import { UiButton, UiInput } from "tree-shaking-vue-lib";
 </script>
 
 <style>
