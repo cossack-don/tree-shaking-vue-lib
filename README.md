@@ -3,10 +3,9 @@
 - ts
 - css/scss
 - tree-shaking
-- css in js
+- css inject in js or css-modules
 - npm i ../ds --install-links (для установки пакета в необходимый проект) см после package.json
 
-- 
 Папка dist специально включена для того, чтобы увидеть билд. Каждый файл компонента содержит свои стили. У всех компонентов есть свои d.ts файлы. Все пропсы, включая те, которые используют интерфейсы из внешнего файла, корректно отображаются в конечном приложении.
 
 Также для примера используются дополнительные общие стили, которые не связаны с компонентами. Их можно отдельно импортировать.
@@ -19,6 +18,12 @@
 </script>
 
 <style>
-  @import "vite-lib-code-splitting";
+  @import "tree-shaking-vue-lib";
 </style>
+```
+```
+//main.ts
+
+//global css
+import "vite-lib-code-splitting/dist/style.css";
 ```
