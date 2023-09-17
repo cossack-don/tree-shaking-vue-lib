@@ -1,4 +1,4 @@
-import "./UiButton.css";
+(function(){"use strict";try{if(typeof document<"u"){var r=document.createElement("style");r.appendChild(document.createTextNode("._button_8v9kg_2{display:inline-flex;padding:16px 32px;cursor:pointer;border:0;border-radius:16px}._button_8v9kg_2[data-color=primary]{background-color:var(--color-primary)}._button_8v9kg_2[data-color=gray]{background-color:var(--color-gray)}")),document.head.appendChild(r)}}catch(o){console.error("vite-plugin-css-injected-by-js",o)}})();
 import { defineComponent as e, openBlock as n, createElementBlock as l, normalizeClass as c, renderSlot as r } from "vue";
 import { _ as a } from "../_plugin-vue_export-helper-dad06003.js";
 const u = ["data-color"], _ = /* @__PURE__ */ e({

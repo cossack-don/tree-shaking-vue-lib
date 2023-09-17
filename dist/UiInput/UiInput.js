@@ -1,4 +1,4 @@
-import "./UiInput.css";
+(function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode("._input_s9lo8_2{padding:4px 8px;border-radius:4px;border:1px solid}")),document.head.appendChild(e)}}catch(d){console.error("vite-plugin-css-injected-by-js",d)}})();
 import { defineComponent as u, openBlock as a, createElementBlock as p, normalizeClass as i } from "vue";
 import { _ as d } from "../_plugin-vue_export-helper-dad06003.js";
 const r = ["value", "disabled"], m = /* @__PURE__ */ u({

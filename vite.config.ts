@@ -3,6 +3,7 @@ import { resolve } from "path";
 import vue from "@vitejs/plugin-vue";
 import dts from "vite-plugin-dts";
 import { viteStaticCopy } from "vite-plugin-static-copy";
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 import { defineConfig } from "vite";
 
 // TODO префикс для папки UI
@@ -32,6 +33,7 @@ export default defineConfig({
 
   plugins: [
     vue(),
+    cssInjectedByJsPlugin({relativeCSSInjection:true}),
     dts({ entryRoot: "./src/components", cleanVueFileName: true }),
     viteStaticCopy({
       targets: [
