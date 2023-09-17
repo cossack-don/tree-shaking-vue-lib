@@ -21,9 +21,11 @@
   @import "tree-shaking-vue-lib";
 </style>
 ```
+
+or
 ```
 //main.ts
 
 //global css
-import "vite-lib-code-splitting/dist/style.css";
+import "tree-shaking-vue-lib/dist/style.css";
 ```
